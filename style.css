@@ -1,0 +1,312 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* body{
+    background-color: #f9faf7cc;
+} */
+ /* header section styles start here */
+ header{
+    max-width: 1000px;
+ margin: 1rem auto;
+ }
+ .navbar{
+  display: flex;
+  justify-content: space-between;
+ }
+ .nav-title{
+ 
+ }
+ .navbar ul{
+    display: flex;
+    list-style: none;
+
+ }
+ .navbar li{
+    margin-right: 2rem;
+ }
+ .icons{
+    margin-right: 1rem;
+ }
+
+ /* baaner section styls start  here */
+ .banner{
+   margin: 6rem auto;
+   display: flex;
+   justify-content: space-around;
+ }
+ .banner-container{
+ 
+  width: 580px;
+  margin: auto;
+ }
+
+ .banner-description{
+  color: gray;
+  font-size: 1rem;
+  padding: .4rem 0;
+ }
+ .banner-btn{
+    background-color: #E02C6D;
+    padding: .5rem;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+ }
+ .banner-img{
+   background-color: lightgrey;
+   border-radius: 50%;
+   padding: 1rem;
+
+ }
+ /* baaner section styls ends here */
+ /* header section styles ends here */
+
+
+ /* main section styles start here */
+
+ /* icons section style start here */
+    .icons-section{
+        max-width: 1000px;
+        margin: 3rem auto;
+        display: flex;
+        justify-content: space-around;
+        border: .1px solid rgb(233, 228, 228);
+       
+        padding: .5rem 0;
+        border-radius: .7rem;
+    }
+ /* icons section style ends here */
+
+ /* card section styles start here */
+ .card-section{
+ max-width: 1000px;
+ margin: auto;
+
+
+ }
+ .card-title{
+    text-align: center;
+    font-size: 2rem;
+    margin: 3rem 0;
+ }
+ .card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+ }
+ .card{
+    width: 300px;
+    border-radius: .3rem;
+    height: 329px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+ }
+
+ .card img{
+    width: 250px;
+    margin-left: 1.6rem;
+    align-items: center;
+ }
+ .title{
+    font-size: 1.2rem;
+    text-align: center;
+ }
+ .price{
+    font-size: 1rem;
+    text-align: center;
+    margin: .5rem 0;
+ }
+ .star-container{
+    text-align: center;
+    margin: .6rem 0;
+    font-size: .6rem;
+ }
+ .icons-styles{
+    color: orangered;
+ }
+ .card-description{
+    color: darkgrey;
+    text-align: center;
+    font-size: .8rem;
+    margin-bottom: 1rem;
+ }
+ .see-more{
+    color: #E02C6D;
+    text-align: end;
+    margin: 1rem auto ;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    font-weight: bold;
+ }
+ /* card section styles ends here */
+
+ /* feature section start here */
+ .feature-section{
+    max-width: 1000px;
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .feature-img{
+flex: 1;
+
+ }
+ .feature-img img{
+    width: 70%;
+ }
+ .feature-container{
+    flex: 1;
+ }
+ .feature-container p{
+    color: gray;
+    padding: .6rem 0;
+
+    font-size: .8rem;
+ }
+ .feature-btn{
+    background-color: #E02C6D;
+    color: white;
+    border: none;
+    border-radius: .2rem;
+    padding: .7rem;
+ }
+
+ /* footer section styles here */
+ footer{
+    background-color: black;
+    width: 100%;
+    height: 40vh;
+    color: white;
+    text-align: center;
+  
+    
+ }
+.footer-container{
+    margin-top: 2rem;
+      
+    padding: 2rem;
+}
+.footer-container h1{
+   margin-bottom: 20px;
+}
+.footer-container h3{
+    margin: .6rem auto;
+}
+.footer-icon {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+  margin-right: 1rem;
+
+}
+ /* main section styles ends here */
+
+
+ /* responsive design start here */
+ /* responsive for mobile 576px */
+ @media (max-width:576px) {
+    .navbar{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    .navbar ul{
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    /* for banner */
+    .banner{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .banner-container{
+        margin: 1rem 0;
+    }
+    .banner-img img{
+        width: 100%;
+        
+    }
+       /* icons section */
+       .icons-section{
+        flex-direction: column;
+        border: none;
+        justify-content: center;
+        align-items: center;
+       margin-top: 1rem;
+
+      }
+      /* cardc section */
+      .card-section{
+        max-width: 1200px ;
+        margin:  0 auto;
+        align-items: center;
+        text-align: center;
+       padding-left: .6rem;
+      }
+      .card-container{
+        grid-template-columns: 1fr;
+        margin: auto;
+        align-items: center;
+      }
+      .card{
+        margin: auto;
+      }
+       .feature-section{
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+       }
+       .feature-img img{
+         width: 100%;
+         margin: auto;
+       }
+       footer{
+        width: 100%;
+        background-color: black;
+       }
+ }
+
+ /* responsive for tablate 992px */
+ @media (min-width:577px) and (max-width:992px) {
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    .navbar ul{
+        padding: 1rem 0;
+        text-align: center;
+    }
+      .banner{
+        flex-direction: row;
+        margin: auto;
+        padding: 1rem;
+      }
+      /* icons section */
+      .icons-section{
+        flex-direction: row;
+      }
+
+      /* card section */
+      .card-container{
+        grid-template-columns: repeat(2,1fr);
+        margin: 3rem auto;
+        align-items: center;
+      }
+      .feature-section{
+       
+        margin: auto 2rem;
+       
+       }
+ }
+ /* responsive design ends here */
